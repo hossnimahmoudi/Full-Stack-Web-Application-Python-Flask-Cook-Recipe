@@ -53,6 +53,7 @@ def update_recipe(recipe_id):
             'description': data.get('description')
         }
     )
+    return jsonify(recipe)
 
 if __name__ == "__main__":
     app.run()
